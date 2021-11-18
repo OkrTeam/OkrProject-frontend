@@ -1,0 +1,5 @@
+let goalArray = [{ goalname: "Мы нанимаем лучших в IT", prog: 46, subgoals: [{ subgoalname: "100% годового беклога закрыто", id: "first", progress: 45, keyres: 100, q1: 13, q2: 24, q3: 39, q4: 45, comments: [{ text: "20% закрыто", comprog: 20 }, { text: "35% закрыто", comprog: 15 }, { text: "45% закрыто", comprog: 10 }] }, { subgoalname: "Увеличили индекс удовлетворенности менеджеров до 4.8", id: "second", progress: 3.9, keyres: 4.8, q1: 2.1, q2: 2.8, q3: 3.5, q4: 3.9, comments: [{ text: "увеличили до 1.8", comprog: 1.8 }, { text: "увеличили до 3.9", comprog: 2.1 }] }] },
+                 { goalname: "Сотрудники считают Додо лучшим местом работы в IT", prog: 13, subgoals: [{ subgoalname: "eNPC в IT до 70%", id: "third", progress: 54, keyres: 70, q1: 35, q2: 41, q3: 43, q4: 54, comments: [{ text: "увеличено на 20%", comprog: 20 }, { text: "увеличено на 34%", comprog: 34 }] }, { subgoalname: "Уровень годовой текучести 10%", id: "four", progress: 8, keyres: 10, q1: 4, q2: 6.7, q3: 7, q4: 8, comments: [{ text: "увеличено до 3%", comprog: 3 }, { text: "увеличено до 8%", comprog: 5 }] }] },
+];
+
+export default goalArray;

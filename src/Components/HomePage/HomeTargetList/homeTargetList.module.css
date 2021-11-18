@@ -1,0 +1,47 @@
+.target_btn {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.progress {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.progress_perc {
+    width: 0%;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+    margin:0;
+}
+
+.middle_progress_bar{
+    width: 55%;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+}
+
+.short_progress_bar {
+    width: 30%;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+}
+
+.long_progress_bar {
+    width: 90%;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+}
+
+.full_progress_bar {
+    width: 100%;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+}
+
+.card_fix {
+    padding: 15px 15px 0 15px;
+}
+
+.card_margin_btm {
+    margin-bottom: 15px;
+}

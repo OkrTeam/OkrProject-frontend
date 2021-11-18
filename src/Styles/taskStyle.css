@@ -1,0 +1,155 @@
+.custom-container-task {
+    height: 50px;
+    background-color: white;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+form{
+    width: 100%;
+}
+
+.image-mark {
+    height: 24px;
+    width: 24px;
+}
+
+.bg-orange {
+    background-color: #EE7200;
+}
+
+.bg-blue {
+    background-color: #7000FF;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tags-container {
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.target-container {
+    height: 38px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.untarget-container {
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.target-text {
+    max-width: 90%;
+    padding: 3px;
+}
+
+.mark-untarget-container {
+    box-shadow: 0px 0px 4px #EE7200;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 6px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.kr-btn {
+    background-color: #7000FF!important;
+    border-radius: 50%!important;
+    border: none;
+    color: white;
+    padding-right: 14px;
+    padding-left: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+}
+
+.task-btn {
+    background-color: #EE7200!important;
+    border-radius: 25px!important;
+    border: none;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 40px auto 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.target-tag-pink {
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: hotpink;
+}
+
+.target-tag-blue {
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: dodgerblue;
+}
+
+.test-container {
+    border: 2px solid orangered;
+}
+
+.img-container {
+    height: 24px;
+    width: 24px;
+    background-color: #EE7200;
+}
+
+.task-input {
+    background-image: url('../Images/goal.png');
+    background-size: auto 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 45px;
+    margin-bottom: 5px;
+    border: 1px solid lightgrey;
+    height: 40px;
+    font-size: 16px;
+    color: darkslategrey;
+}
+
+.kr-input {
+    background-image: url('../Images/key.png');
+    background-size: auto 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 45px;
+    margin-bottom: 5px;
+    border: 1px solid lightgrey;
+    height: 40px;
+    font-size: 16px;
+    color: dimgrey;
+}

@@ -1,0 +1,80 @@
+{
+  "Id": 1,
+  "OwnerType": "user",
+  "OwnerId": 1,
+  "Objectives": [
+    {
+      "Id": 1,
+      "Title": "Test Objective 1",
+      "Tags": [
+        {
+          "Id": 1,
+          "Name": "test"
+        }
+      ],
+      "KeyResults": [
+        {
+          "Title": "Key result 1.1",
+          "Created": "2021-04-24",
+          "HasMetrics": true,
+          "MetricDirection": "Ascending",
+          "ExpectedResult": 100,
+          "CurrentResult": 45,
+          "Progress": 45
+        },
+        {
+          "Title": "Key result 1.2",
+          "Created": "2021-04-20",
+          "HasMetrics": true,
+          "MetricDirection": "Ascending",
+          "ExpectedResult": 10.0,
+          "CurrentResult": 2.3,
+          "Progress": 23
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Title": "Test Objective 2",
+      "Tags": [
+        {
+          "Id": 1,
+          "Name": "test"
+        },
+        {
+          "Id": 2,
+          "Name": "test2"
+        }
+      ],
+      "KeyResults": [
+        {
+          "Title": "Key result 2.1",
+          "Created": "2021-04-24",
+          "HasMetrics": true,
+          "MetricDirection": "Descending",
+          "ExpectedResult": 3.4,
+          "CurrentResult": 10.0,
+          "Progress": 3.4
+        },
+        {
+          "Title": "Key result 2.2",
+          "Created": "2021-04-24",
+          "HasMetrics": true,
+          "MetricDirection": "Ascending",
+          "ExpectedResult": 10.0,
+          "CurrentResult": 2.3,
+          "Progress": 23
+        },
+        {
+          "Title": "Key result 2.3",
+          "Created": "2021-04-24",
+          "HasMetrics": true,
+          "MetricDirection": "Ascending",
+          "ExpectedResult": 100,
+          "CurrentResult": 45,
+          "Progress": 45
+        }
+      ]
+    }
+  ]
+}

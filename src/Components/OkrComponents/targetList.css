@@ -1,0 +1,311 @@
+body {
+    min-width: 1440px;
+}
+
+.watchOKR {
+    height: 70px;
+    padding-left:16px;
+}
+
+.add {
+    position: relative;
+    width: 129px;
+    height: 33px;
+    top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-add {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: 140px;
+    top: -10px;
+    color: white;
+    background: #EE7200;
+    border-radius: 15px;
+}
+
+.goals {
+    position: relative;
+    margin-right: 35px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 10px;
+}
+
+.big-goal {
+    width: 700px;
+    min-height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mini-goal {
+    width: 640px;
+    min-height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.padding-li {
+    padding-top: 10px;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tag {
+    position: absolute;
+    width: 91.33px;
+    height: 26.22px;
+    left: 630px;
+    background: #6BCAFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.progressbar {
+    height: 15px;
+    margin-top: 10px;
+    background: #C7CCD1;
+    border-radius: 5px;
+}
+
+.progress-gradient {
+    width: 0%;
+    height: 15px;
+    background-image: linear-gradient(to right, #EE7200, #7000FF);
+    border-radius: 5px;
+}
+
+.progressunit {
+    width: 73px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.inrow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.padding-progress {
+    padding-left: 10px;
+}
+
+.center {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+
+.minibtn {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 4px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.groupbtn {
+    margin-left: 5px;
+}
+
+.quartals {
+    margin-left: 6px;
+    width: 338px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.quartal {
+    width: 25%;
+    border-right: 2px solid #E2E2E2;
+}
+
+.lastquartal {
+    width: 25%;
+}
+
+.progresslabel {
+    position: relative;
+    height: 21px;
+    left: 750px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.quartallabel {
+    position: relative;
+    width: 91px;
+    height: 21px;
+    left: 908px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.btn-comment {
+    background: #EE7200;
+    color: white;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 580px;
+    border-radius: 20px;
+}
+
+button {
+    border: none;
+}
+
+.modal-height {
+    height: 500px;
+}
+
+.modal-text {
+    float: left;
+}
+
+.modal-input {
+    width: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+.flex-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentary {
+    margin-top: 10px;
+    width:100%;
+}
+
+.comment-input {
+    margin-top: 3px;
+}
+
+.progress-range {
+    width: 470px;
+}
+
+.progress-percent {
+    float: right;
+    margin-bottom: 4px;
+}
+
+.height-modal {
+    height:530px;
+}
+
+.orange-btn {
+    width: 120px;
+    height: 35px;
+    color:white;
+    background: #EE7200;
+    border-radius: 15px;
+}
+
+.purple-btn {
+    width: 120px;
+    height: 35px;
+    color: white;
+    background: #7000FF;
+    border-radius: 15px;
+}
+
+.background-col {
+    background-color: #E5E5E5 !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0;
+}
+
+.comment-progress {
+    float:right;
+}
+
+.card-padding {
+    padding:0;
+}
+
+.ul-padding {
+    padding-left:50px;
+}
+
+.font {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.half {
+    width: 50%
+}
+
+.comment-space-between {
+    justify-content: space-between;
+}
+
+.comment-space-between:hover {
+    background-color: #fcebca;
+}
+
+.card-fix {
+    padding: 15px 15px 0 15px;
+}
+
+.comment-padding {
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.goal-fix {
+    padding:10px;
+    width:570px;
+}
+
+.mini-goal-fix {
+    max-width: 455px;
+}

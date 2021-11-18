@@ -1,0 +1,64 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.watchOKR {
+    height: 70px;
+    padding-left:16px;
+}
+
+.add {
+    position: relative;
+    width: 129px;
+    height: 33px;
+    top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: 140px;
+    top: -10px;
+    color: white;
+    background: #EE7200;
+    border-radius: 15px;
+}
+
+.goals {
+    position: relative;
+    margin-right: 35px;
+}
+
+.inrow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 10px;
+}
+
+.progressLabel {
+    position: relative;
+    height: 21px;
+    left: 750px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}

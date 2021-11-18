@@ -1,0 +1,20 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.margin_bottom {
+    margin-bottom: 30px;
+}
+
+.main_target {
+    text-align: center;
+}
+
+.card_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text_center {
+    text-align: center;
+}

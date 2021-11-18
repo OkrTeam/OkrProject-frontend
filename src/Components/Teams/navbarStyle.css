@@ -1,0 +1,71 @@
+.custom-container {
+    display: block;
+    height: 80%;
+    background-color: #7000FF;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn {
+    color: white !important;
+}
+
+.color {
+    color: white !important;
+}
+
+.color:hover {
+    text-decoration: none;
+}
+
+.username-btn {
+    background-color: #7000FF !important;
+    color: white !important;
+    border-radius: 45px;
+}
+
+.no-mark-list {
+    list-style-type: none;
+}
+
+.grey-navbar {
+    background-color: #E5E5E5 !important;
+}
+
+.img-brand {
+    height: 45px;
+    width: 45px;
+}
+
+.img-user {
+    height: 30px;
+    width: 30px;
+}
+
+.username {
+    margin-right: 15px;
+}
+
+.round {
+    border-radius: 45px;
+}
+
+.menu-mobile {
+    border-top: 1px solid #aeb0b8;
+    height: 100px;
+    margin-bottom:20px;
+}
+
+.option-mobile {
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 450;
+    color: black;
+    border-bottom: 1px solid #aeb0b8;
+}
+
+.option-mobile:hover {
+    background-color: #d3d3d6;
+    color:black
+}
