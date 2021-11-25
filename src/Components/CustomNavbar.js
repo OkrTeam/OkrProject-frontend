@@ -59,6 +59,9 @@ class CustomNavbar extends Component {
                             <NavItem>
                                 <NavLink href="/teams">Команды</NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink href="/okr_tree">Дерево OKR</NavLink>
+                            </NavItem>
                         </Nav>
                         <div className='username'>
                             {userName}
@@ -71,6 +74,7 @@ class CustomNavbar extends Component {
                 <div className="menu-mobile" style={{ display: `${this.state.isOpen ? 'block' : 'none'}` }}>
                     <NavLink href="/my_okr" className="option-mobile">Мой OKR</NavLink>
                     <NavLink href="/teams"  className="option-mobile">Команды</NavLink>
+                    <NavLink href="/okr_tree"  className="option-mobile">Дерево OKR</NavLink>
                 </div>
             </div>
         );
