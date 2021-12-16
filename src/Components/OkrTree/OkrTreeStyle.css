@@ -4,101 +4,83 @@
     height: 640px;
     background-color:#f2e6dc ;
     position: relative;
+    overflow: auto;
 }
 
-.main_circle {
-    height: 600px;
-    width: 600px;
-    left: 25%;
-    top: 20px;
-}
-
-.sub_circle_size {
-    height: 200px;
-    width: 300px;
-    transform-origin: 100% 50%;
-}
-
-.sub_circle1 {
-    left: 0;
-    top: 200px;
-    transform: rotate(0deg);
-}
-
-.sub_circle2 {
-    left: 0;
-    top: 200px;
-    transform: rotate(60deg);
-}
-
-.sub_circle3 {
-    left: 0;
-    top: 200px;
-    transform: rotate(120deg);
-}
-
-.sub_circle4 {
-    left: 0;
-    top: 200px;
-    transform: rotate(180deg);
-}
-
-.sub_circle5 {
-    left: 0;
-    top: 200px;
-    transform: rotate(240deg);
-}
-
-.sub_circle6 {
-    left: 0;
-    top: 200px;
-    transform: rotate(300deg);
-}
-
-.circle_title {
-    transform: rotate(0deg);
-}
-
-.circle_title2 {
-    transform: rotate(-60deg);
-}
-
-.circle_title3 {
-    transform: rotate(-120deg);
-}
-
-.circle_title4 {
-    transform: rotate(-180deg);
-}
-
-.circle_title5 {
-    transform: rotate(-240deg);
-}
-
-.circle_title6 {
-    transform: rotate(-300deg);
-}
-
-.circle_wrapper {
-    position: absolute;
+.invisible {
+    display: none;
 }
 
 .circleOkr {
     border-radius: 50%;
-    height: 600px;
-    width: 600px;
+    height: 100px;
+    width: 100px;
     border: 2px solid #7000ff;
     position: relative;
     background-color: #c79cfd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.circleOkr:hover {
+    border: 4px solid black;
+    background-color: #a35aff;
+}
+
+.branch {
+    border: 2px solid black;
+    width: 80%;
+    height: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    position: relative;
+}
+
+.branch2 {
+    border: 2px solid black;
+    width: 80%;
+    height: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    position: relative;
+}
+
+.node {
+    border: 2px solid black;
+    width: 1px;
+    height: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.root-wrapper {
+    height: 150px;
+}
+
+.node2 {
+    border: 2px solid black;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circleTeam {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border: 2px solid #7000ff;
-    position: relative;
     background-color: #c79cfd;
+}
+
+.circle-wrapper {
+    height: 122px;
+    width: 100px;
 }
 
 .circleTeam:hover {
@@ -125,9 +107,6 @@ ul {
 }
 
 p {
-    margin: 0;
     text-align: center;
-    position: relative;
-    top: 45%;
-    font-size: 30px;
+    margin-top: 35%;
 }
