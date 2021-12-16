@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CustomNavbar from "../CustomNavbar";
 import './OkrTreeStyle.css';
 import TeamArray from '../data/TeamArray'
@@ -6,28 +6,48 @@ import OkrTeam from "./OkrTeam";
 
 function OkrTree() {
 
-    function getIndex(name) {
-        return TeamArray.findIndex(obj => obj.name === name);
+    const [state, setState] = useState({
+        visible: false
+    });
+
+    function SetWidth(){
+        let elem = document.getElementsByClassName('branch')[0];
+        elem.style.width = `${10 + 15 * (TeamArray.length-1)}%`;
+    }
+
+    function toggle_vision() {
+        const currentState = state.visible;
+        const promise = new Promise((resolve, reject) => {
+            setState({visible:(!currentState)});
+            resolve();
+        });
+        promise.then(() => {
+                if (!state.visible)
+                    SetWidth();
+        });
     }
 
     return (
         <div>
             <CustomNavbar brand='Dodo OKR' myOKR='Мой OKR' teams='Команды' username='Username' />
             <div className="wrapper">
-                <ul>
-                    <li>
-                        <div className="circle_wrapper main_circle">
-                            <div className="circleOkr">
-                                <p>Dodo</p>
-                                <ul>
-                                    {TeamArray.map(TeamArray => {
-                                        return(<OkrTeam name={TeamArray.name} index={getIndex(TeamArray.name)+1} />)
-                                    })}
-                                </ul>
-                            </div>
+                <div className="circleOkr" onClick={toggle_vision}>
+                    <p>Dodo</p>
+                </div>
+                <div className={state.visible ? 'node': 'invisible'}/>
+                <div className={state.visible ? 'branch': 'invisible'}>
+                    <div>
+                        <div className="row align-items-start">
+                            {TeamArray.map(team => {
+                                return (
+                                    <div className="col">
+                                        <OkrTeam name={team.name}/>
+                                    </div>
+                                )
+                            })}
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -5,22 +5,23 @@ import TeamArray from '../data/TeamArray'
 function OkrTeam(props) {
 
     const [state, setState] = useState({
-        active: false
+        visible: false
     });
 
-    const toggleClass = () => {
-        const currentState = state.active;
-        setState({active: !currentState});
-    };
+    function toggle_vision() {
+        const currentState = state.visible;
+        setState({visible: !currentState});
+    }
 
     return (
-        <li>
-            <div className={`circle_wrapper sub_circle${props.index} sub_circle_size`}>
-                <div  className={state.active ? 'zoom': 'circleTeam'} onClick={() => toggleClass()} >
-                    <p className={`circle_title${props.index}`}>{props.name}</p>
-                </div>
+        <div className="circle-wrapper">
+            <div className="node2"/>
+            <div className="circleTeam" onClick={() => toggle_vision()}>
+                <p>{props.name}</p>
             </div>
-        </li>
+            <div className={state.visible ? 'node2': 'invisible'}/>
+            <div className={state.visible ? 'branch2': 'invisible'}/>
+        </div>
     )
 }
 
