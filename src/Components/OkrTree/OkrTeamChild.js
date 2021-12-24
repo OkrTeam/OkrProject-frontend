@@ -7,7 +7,7 @@ function OkrTeamChild(props) {
         <div className="circle-wrapper">
             <div className="node2"/>
             <div className="circleTeam">
-                <p>{props.name}</p>
+                <p className="treeName">{props.name}</p>
             </div>
         </div>
     )

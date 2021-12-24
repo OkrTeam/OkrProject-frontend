@@ -16,9 +16,9 @@
     transform-origin: center;
 }
 
-progress-ring2{
-    transform: rotate(-90deg);
-    transform-origin: center;
+.treeName {
+    text-align: center;
+    padding-top: 35%;
 }
 
 .circleOkr {
@@ -114,9 +114,4 @@ li {
 ul {
     margin-left: 0;
     padding-left: 0;
-}
-
-p {
-    text-align: center;
-    padding-top: 35%;
 }

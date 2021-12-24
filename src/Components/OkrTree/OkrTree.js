@@ -36,7 +36,7 @@ function OkrTree() {
             <CustomNavbar brand='Dodo OKR' myOKR='Мой OKR' teams='Команды' username='Username' />
             <div className="wrapper">
                 <div className="circleOkr" onClick={toggle_vision}>
-                    <p>Dodo</p>
+                    <p className="treeName">Dodo</p>
                 </div>
                 <div className={state.visible ? 'node': 'invisible'}/>
                 <div className={state.visible ? 'branch': 'invisible'}>
