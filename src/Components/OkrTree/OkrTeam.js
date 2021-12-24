@@ -50,7 +50,7 @@ function OkrTeam(props) {
             <div className="circleTeam" onClick={() => toggle_vision()}>
                 <svg className="progress-svg" width="100" height="100">
                     <circle className="progress-ring" stroke="black" stroke-width="4" cx="50" cy="50" r="45" fill="transparent"/>
-                    <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">{props.progress}</text>
+                    <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">{props.name}</text>
                 </svg>
             </div>
             <div className={state.visible ? 'node2': 'invisible'}/>
