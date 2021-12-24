@@ -10,6 +10,10 @@ function OkrTree() {
         visible: false
     });
 
+    function getIndex(name) {
+        return TeamArray.findIndex(obj => obj.name === name);
+    }
+
     function SetWidth(){
         let elem = document.getElementsByClassName('branch')[0];
         elem.style.width = `${10 + 15 * (TeamArray.length-1)}%`;
@@ -41,7 +45,8 @@ function OkrTree() {
                             {TeamArray.map(team => {
                                 return (
                                     <div className="col">
-                                        <OkrTeam name={team.name}/>
+                                        <OkrTeam name={team.name} progress={team.team_progress} index={getIndex(team.name)}
+                                            children={team.children}/>
                                     </div>
                                 )
                             })}
