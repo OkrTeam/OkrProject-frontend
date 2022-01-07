@@ -35,6 +35,11 @@ function OkrTree() {
         <div>
             <CustomNavbar brand='Dodo OKR' myOKR='Мой OKR' teams='Команды' username='Username' />
             <div className="wrapper">
+                <div className="button-zone">
+                    <a className="ref" href='/add_team'>
+                        <button className="add-button">Добавить команду</button>
+                    </a>
+                </div>
                 <div className="circleOkr" onClick={toggle_vision}>
                     <p className="treeName">Dodo</p>
                 </div>

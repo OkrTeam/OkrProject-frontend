@@ -7,7 +7,7 @@ import HomePage from "./Components/HomePage/Home";
 import EditTaskList from "./Components/TaskForm/EditTaskForm";
 import Login from "./Auth/Containers/login";
 import Logout from "./Auth/Containers/logout";
-import TeamsList from "./Components/Teams/TeamsList";
+import AddTeam from "./Components/Teams/AddTeam";
 import OkrTree from "./Components/OkrTree/OkrTree";
 
 class App extends Component {
@@ -24,8 +24,8 @@ class App extends Component {
                     <Route history={history} path='/my_okr' component={MainTargetList} />
                     <Route history={history} path='/add_okr' component={AddTasks} />
                     <Route history={history} path='/edit_okr' component={EditTaskList} />
-                    <Route history={history} path='/teams' component={TeamsList} />
-                    <Route history={history} path='/okr_tree' component={OkrTree}></Route>
+                    <Route history={history} path='/add_team' component={AddTeam} />
+                    <Route history={history} path='/okr_tree' component={OkrTree}/>
                 </Switch>
             </div>
         );

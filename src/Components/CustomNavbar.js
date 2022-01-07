@@ -1,4 +1,4 @@
-import React, {useState, Component} from "react";
+import React, {Component} from "react";
 import './Teams/navbarStyle.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
@@ -14,8 +14,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    Button
+    NavLink
 } from 'reactstrap';
 
 class CustomNavbar extends Component {
@@ -57,9 +56,6 @@ class CustomNavbar extends Component {
                                 <NavLink href="/my_okr">Мой OKR</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/teams">Команды</NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <NavLink href="/okr_tree">Дерево OKR</NavLink>
                             </NavItem>
                         </Nav>
@@ -73,8 +69,7 @@ class CustomNavbar extends Component {
                 </Navbar>
                 <div className="menu-mobile" style={{ display: `${this.state.isOpen ? 'block' : 'none'}` }}>
                     <NavLink href="/my_okr" className="option-mobile">Мой OKR</NavLink>
-                    <NavLink href="/teams"  className="option-mobile">Команды</NavLink>
-                    <NavLink href="/okr_tree"  className="option-mobile">Дерево OKR</NavLink>
+                    <NavLink href="/okr_tree" className="option-mobile">Дерево OKR</NavLink>
                 </div>
             </div>
         );
