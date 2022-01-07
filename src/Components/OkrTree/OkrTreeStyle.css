@@ -1,10 +1,35 @@
 .wrapper {
     padding: 0.5rem 1rem;
-    border: 2px solid #fb6700;
+    outline: 2px solid #fb6700;
     height: 640px;
     background-color:#f2e6dc ;
     position: relative;
     overflow: auto;
+}
+
+.button-zone {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    border: 2px solid #fb6700;
+    margin-top: -10px;
+    margin-left: -18px;
+}
+
+.ref {
+    position: absolute;
+    left:8px;
+}
+
+.add-button {
+    width: 180px;
+    height: 30px;
+    color: white;
+    background: #EE7200;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3px;
 }
 
 .invisible {

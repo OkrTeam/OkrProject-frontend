@@ -12,24 +12,12 @@ const departments = [{ name: "Dodo Engineering", teams: [{ name: "Команда
                      { name: "Dodo Development", teams: [{ name: "Команда-4", participants: ["Савельев Давид", "Горбачёв Любомир", "Антонов Юлиан", "Нестеров Семен", "Шестаков Григорий"] }, { name: "Команда-5", participants: ["Ситников Геннадий", "Самсонов Филипп", "Молчанов Филипп", "Мишин Родион", "Корнилов Игорь"] }, { name: "Команда-6", participants: ["Герасимов Адам", "Панфилов Павел", "Пестов Аввакум", "Николаев Анатолий", "Дорофеев Лазарь"] }] }
 ]
 
-function TeamsList() {
+function AddTeam() {
     return(
         <div>
             <CustomNavbar brand='Dodo OKR' myOKR='Мой OKR' teams='Команды' username='Username'/>
-            <div className='container margin-top'>
-                <div className='margin-bottom'>
-                    <AddForm/>
-                </div>
-                <>
-                    {departments.map((department) => {
-                        return (
-                            <DepartmentItem department={department} />)
-                        })
-                    }
-                </>
-            </div>
         </div>
     )
 }
 
-export default TeamsList
+export default AddTeam
