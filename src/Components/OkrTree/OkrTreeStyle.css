@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 0.5rem 1rem;
+    padding: 8px;
     outline: 2px solid #fb6700;
     height: 640px;
     background-color:#f2e6dc ;
@@ -8,12 +8,12 @@
 }
 
 .button-zone {
-    position: absolute;
+    position: sticky;
+    top:0px;
+    left:0px;
     height: 104px;
     width: 200px;
     border: 2px solid #fb6700;
-    margin-top: -10px;
-    margin-left: -18px;
 }
 
 .ref {
