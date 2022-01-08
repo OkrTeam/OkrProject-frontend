@@ -9,7 +9,7 @@
 
 .button-zone {
     position: absolute;
-    height: 100px;
+    height: 104px;
     width: 200px;
     border: 2px solid #fb6700;
     margin-top: -10px;
@@ -18,18 +18,41 @@
 
 .ref {
     position: absolute;
-    left:8px;
+    left:3px;
 }
 
-.add-button {
-    width: 180px;
+.ref-2 {
+    position: absolute;
+    left:3px;
+    top:32px;
+}
+
+.ref-3 {
+    position: absolute;
+    left:3px;
+    top:64px;
+}
+
+.menu {
+    width: 190px;
     height: 30px;
     color: white;
-    background: #EE7200;
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 3px;
+}
+
+.add-button {
+    background: #EE7200;
+}
+
+.edit-button {
+    background: #7000FF;
+}
+
+.delete-button {
+    background: #d63646;
 }
 
 .invisible {
