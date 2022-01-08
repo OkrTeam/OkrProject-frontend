@@ -37,7 +37,13 @@ function OkrTree() {
             <div className="wrapper">
                 <div className="button-zone">
                     <a className="ref" href='/add_team'>
-                        <button className="add-button">Добавить команду</button>
+                        <button className="add-button menu">Добавить команду</button>
+                    </a>
+                    <a className="ref-2" href='#'>
+                        <button className="edit-button menu">Редактировать команду</button>
+                    </a>
+                    <a className="ref-3" href='#'>
+                        <button className="delete-button menu">Удалить команду</button>
                     </a>
                 </div>
                 <div className="circleOkr" onClick={toggle_vision}>
