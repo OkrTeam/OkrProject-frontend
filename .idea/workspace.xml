@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d10be2ea-50fc-4012-974a-5cbac36db5d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Teams/addTeamStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Teams/AddTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Teams/AddTeam.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641838033457</updated>
       <workItem from="1641838037018" duration="176000" />
-      <workItem from="1641838214755" duration="6092000" />
+      <workItem from="1641838214755" duration="6305000" />
     </task>
     <servers />
   </component>

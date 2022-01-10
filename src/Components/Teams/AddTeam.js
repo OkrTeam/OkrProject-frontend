@@ -37,7 +37,7 @@ function AddTeam() {
         "noOptions": "No options",
         "search": "Поиск",
         "selectAll": "Выбрать всех",
-        "selectAllFiltered": "Select All (Filtered)",
+        "selectAllFiltered": "Выбрать всех (по поиску)",
         "selectSomeItems": "Выберите участников",
         "create": "Create",
     }
