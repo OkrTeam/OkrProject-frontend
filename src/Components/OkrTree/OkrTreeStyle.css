@@ -89,7 +89,7 @@
 .branch {
     border: 2px solid black;
     width: 80%;
-    height: 1%;
+    height: 1px;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
@@ -139,20 +139,13 @@
 .circle-wrapper {
     height: 122px;
     width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circleTeam:hover {
     outline: 2px solid black;
     background-color: #a35aff;
-}
-
-.zoom {
-    border-radius: 50%;
-    height: 600px;
-    width: 600px;
-    border: 2px solid #7000ff;
-    position: relative;
-    background-color: #c79cfd;
 }
 
 li {
