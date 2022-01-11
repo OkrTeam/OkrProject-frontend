@@ -11,9 +11,19 @@
     position: sticky;
     top:0px;
     left:0px;
-    height: 104px;
+    height: 40px;
     width: 200px;
     border: 2px solid #fb6700;
+}
+
+.select-info {
+    position: sticky;
+    top:130px;
+    left:0px;
+    height: 123px;
+    width: 200px;
+    border: 2px solid #fb6700;
+    padding-left: 5px;
 }
 
 .ref {
@@ -24,13 +34,13 @@
 .ref-2 {
     position: absolute;
     left:3px;
-    top:32px;
+    top:50px;
 }
 
 .ref-3 {
     position: absolute;
     left:3px;
-    top:64px;
+    top:82px;
 }
 
 .menu {
@@ -155,4 +165,9 @@ li {
 ul {
     margin-left: 0;
     padding-left: 0;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0;
 }

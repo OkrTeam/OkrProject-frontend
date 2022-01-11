@@ -35,6 +35,10 @@ function OkrTree() {
                     <a className="ref" href='/add_team'>
                         <button className="add-button menu">Добавить команду</button>
                     </a>
+                </div>
+                <div className="select-info">
+                    <p>Выбранная команда:</p>
+                    <p>Team 1</p>
                     <a className="ref-2" href='#'>
                         <button className="edit-button menu">Редактировать команду</button>
                     </a>
