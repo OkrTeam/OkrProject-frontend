@@ -16,9 +16,10 @@ const HomeTargetList = (props) => {
                 <div>
                     <Button className={s.target_btn} onClick={toggle} style={{ marginBottom: '1rem' }}>
                         {goal.goalname}
-                    <div className="progress"> {/*прогресс тут из бутстрапа, мб можно будет поменять потом*/}
+                    <div className="progress" style={{height:'15px'}}> {/*прогресс тут из бутстрапа, мб можно будет поменять потом*/}
                             <div className={s.progress_perc} role="progressbar" st style={{ width: `${goal.prog}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        </div>
+
+                            </div>
                     </div>
                     </Button>
                     <Collapse isOpen={isOpen}>
