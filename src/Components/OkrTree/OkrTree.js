@@ -40,7 +40,7 @@ function OkrTree() {
                 <div className="select-info">
                     <p>Выбранная команда:</p>
                     <p>{state.selected_name}</p>
-                    <a className="ref-2" href='#'>
+                    <a className="ref-2" href='/edit_team'>
                         <button className="edit-button menu">Редактировать команду</button>
                     </a>
                     <a className="ref-3" href='#'>
