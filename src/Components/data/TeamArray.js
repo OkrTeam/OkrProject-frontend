@@ -1,0 +1,5 @@
+let TeamArray = [{name:"Team 1",team_progress:"20",id:"1",children:[{name:"Team 2",team_progress:"30",id:"2",children:[{name:"Team 3",team_progress:"40",id:"3",children:[]},{name:"Team 4",team_progress:"50",id:"4",children:[]}]},{name:"Team 5",team_progress:"60",id:"5",children:[]},{name:"Team 6",team_progress:"70",id:"6",children:[]}]},{name:"Team 7",team_progress:"80",id:"7",children:[{name:"Team 8",team_progress:"90",id:"8",children:[{name:"Team 9",team_progress:"50",id:"9",children:[]},{name:"Team 10",team_progress:"40",id:"10",children:[]}]},{name:"Team 11",team_progress:"70",id:"11",children:[]},{name:"Team 12",team_progress:"80",id:"12",children:[]}]},
+    {name:"Team 13",team_progress:"5",id:"13",children:[{name:"Team 14",team_progress:"30",id:"14",children:[{name:"Team 15",team_progress:"65",id:"15",children:[]},{name:"Team 16",team_progress:90,id:"16",children:[]}]},{name:"Team 17",team_progress:"35",id:"17",children:[]},{name:"Team 18",team_progress:"50",id:"18",children:[]}]}]
+
+
+export default TeamArray;

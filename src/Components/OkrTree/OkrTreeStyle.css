@@ -1,0 +1,173 @@
+.wrapper {
+    padding: 8px;
+    outline: 2px solid #fb6700;
+    height: 640px;
+    background-color:#f2e6dc ;
+    position: relative;
+    overflow: auto;
+}
+
+.button-zone {
+    position: sticky;
+    top:0px;
+    left:0px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid #fb6700;
+}
+
+.select-info {
+    position: sticky;
+    top:130px;
+    left:0px;
+    height: 123px;
+    width: 200px;
+    border: 2px solid #fb6700;
+    padding-left: 5px;
+}
+
+.ref {
+    position: absolute;
+    left:3px;
+}
+
+.ref-2 {
+    position: absolute;
+    left:3px;
+    top:50px;
+}
+
+.ref-3 {
+    position: absolute;
+    left:3px;
+    top:82px;
+}
+
+.menu {
+    width: 190px;
+    height: 30px;
+    color: white;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3px;
+}
+
+.add-button {
+    background: #EE7200;
+}
+
+.edit-button {
+    background: #7000FF;
+}
+
+.delete-button {
+    background: #d63646;
+}
+
+.invisible {
+    display: none;
+}
+
+.progress-ring{
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.treeName {
+    text-align: center;
+    padding-top: 35%;
+}
+
+.circleOkr {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    outline: 1px solid #7000ff;
+    position: relative;
+    background-color: #c79cfd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.circleOkr:hover {
+    outline: 2px solid black;
+    background-color: #a35aff;
+}
+
+.branch {
+    border: 2px solid black;
+    width: 80%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    position: relative;
+}
+
+.branch2 {
+    border: 2px solid black;
+    width: 80%;
+    height: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    position: relative;
+}
+
+.node {
+    border: 2px solid black;
+    width: 1px;
+    height: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.root-wrapper {
+    height: 150px;
+}
+
+.node2 {
+    border: 2px solid black;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circleTeam {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    outline: 1px solid #7000ff;
+    background-color: #c79cfd;
+}
+
+.circle-wrapper {
+    height: 122px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circleTeam:hover {
+    outline: 2px solid black;
+    background-color: #a35aff;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0;
+}
