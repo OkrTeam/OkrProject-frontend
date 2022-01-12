@@ -8,7 +8,8 @@ function OkrTeam(props) {
     }, []);
 
     const [state, setState] = useState({
-        visible: false
+        visible: false,
+        id:props.id
     });
 
     function SetWidth(){
@@ -37,8 +38,9 @@ function OkrTeam(props) {
             resolve();
         });
         promise.then(() => {
-            if (!state.visible)
+            if (!state.visible) {
                 SetWidth();
+            }
         });
     }
 
@@ -51,8 +53,8 @@ function OkrTeam(props) {
                     <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">{props.name}</text>
                 </svg>
             </div>
-            <div className={state.visible ? 'node2': 'invisible'}/>
-            <div className={state.visible ? 'branch2': 'invisible'} id={props.id}>
+            <div className={(state.visible && props.children.length !== 0) ? 'node2': 'invisible'}/>
+            <div className={(state.visible && props.children.length !== 0) ? 'branch2': 'invisible'} id={props.id}>
                 <div>
                     <div className="row align-items-start">
                         {props.children.map(team => {
