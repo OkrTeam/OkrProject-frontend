@@ -7,7 +7,8 @@ import OkrTeam from "./OkrTeam";
 function OkrTree() {
 
     const [state, setState] = useState({
-        visible: false
+        visible: false,
+        selected_name: "не выбрано"
     });
 
     function SetWidth(){
@@ -38,7 +39,7 @@ function OkrTree() {
                 </div>
                 <div className="select-info">
                     <p>Выбранная команда:</p>
-                    <p>Team 1</p>
+                    <p>{state.selected_name}</p>
                     <a className="ref-2" href='#'>
                         <button className="edit-button menu">Редактировать команду</button>
                     </a>
