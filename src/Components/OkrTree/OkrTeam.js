@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
 import './OkrTreeStyle.css';
+import '../../Images/close.png'
 
 function OkrTeam(props) {
 
@@ -9,8 +10,13 @@ function OkrTeam(props) {
 
     const [state, setState] = useState({
         visible: false,
+        visible_info:false,
         id:props.id
     });
+
+    useEffect(() => {
+        console.log(state)
+    }, [state]);
 
     function SetWidth(){
         const promise = new Promise((resolve, reject) => {
@@ -32,16 +38,28 @@ function OkrTeam(props) {
     }
 
     function toggle_vision() {
+        console.log("toggle()_vision");
         const currentState = state.visible;
+        const currentState_info = state.visible_info;
         const promise = new Promise((resolve, reject) => {
-            setState({visible:(!currentState)});
+            if (state.visible === true && state.visible_info === false) {
+                setState({visible:(!currentState),visible_info:false});
+            }
+            else
+                setState({visible:(!currentState),visible_info:(!currentState_info)});
             resolve();
         });
         promise.then(() => {
-            if (!state.visible) {
+            if (!state.visible)
                 SetWidth();
-            }
         });
+    }
+
+    function toggle_info() {
+        const currentState = state.visible;
+        const currentState_info = state.visible_info;
+        setState({visible_info:(!currentState_info),visible: currentState})
+        console.log("toggle_info()");
     }
 
     return (
@@ -66,6 +84,14 @@ function OkrTeam(props) {
                         })}
                     </div>
                 </div>
+            </div>
+            <div className={state.visible_info? 'info': 'invisible'}>
+                <div className="button-wrapper">
+                    <div className="close-button" onClick={() => toggle_info()}>
+                        <img src={require("../../Images/close.png")} width="30" height="30"/>
+                    </div>
+                </div>
+                <p>{props.name}</p>
             </div>
         </div>
     )
