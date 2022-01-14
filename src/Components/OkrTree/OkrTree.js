@@ -8,7 +8,7 @@ function OkrTree() {
 
     const [state, setState] = useState({
         visible: false,
-        selected_name: "не выбрано"
+        selected_name: "не выбрано",
     });
 
     function SetWidth(){
