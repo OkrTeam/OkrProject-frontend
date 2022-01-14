@@ -14,10 +14,6 @@ function OkrTeam(props) {
         id:props.id
     });
 
-    useEffect(() => {
-        console.log(state)
-    }, [state]);
-
     function SetWidth(){
         const promise = new Promise((resolve, reject) => {
             let elem = document.getElementById(props.id);
@@ -42,7 +38,7 @@ function OkrTeam(props) {
         const currentState = state.visible;
         const currentState_info = state.visible_info;
         const promise = new Promise((resolve, reject) => {
-            if (state.visible === true && state.visible_info === false) {
+            if (state.visible === true && state.visible_info === false && props.children.length !== 0) {
                 setState({visible:(!currentState),visible_info:false});
             }
             else
@@ -78,7 +74,8 @@ function OkrTeam(props) {
                         {props.children.map(team => {
                             return (
                                 <div className="col">
-                                    <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}/>
+                                    <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}
+                                             members={team.members}/>
                                 </div>
                             )
                         })}
@@ -91,7 +88,27 @@ function OkrTeam(props) {
                         <img src={require("../../Images/close.png")} width="30" height="30"/>
                     </div>
                 </div>
-                <p>{props.name}</p>
+                <p className="team-name">{props.name}</p>
+                <div className="team-members">
+                    <p className="team-members">Участники команды:</p>
+                    {props.members.map(member => {
+                        return (
+                            <p>{member.name}</p>
+                        )
+                    })}
+                    <div>
+                        <p>
+                            <a className="ref-2" href='#'>
+                                <button className="edit-button menu">Редактировать команду</button>
+                            </a>
+                        </p>
+                        <p>
+                            <a className="ref-3" href='#'>
+                                <button className="delete-button menu">Удалить команду</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )
