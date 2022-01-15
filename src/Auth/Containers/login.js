@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { login } from "../Actions/actions";
 import config from '../config.json';
 import { withRouter, Redirect } from "react-router-dom";
-import CustomNavbar from "../../Components/CustomNavbar";
 import '../LoginStyle.css';
 import logo from '../../Images/dodo.png'
 
@@ -18,7 +17,7 @@ class Login extends Component {
             return;
         }
 
-        const tokenBlob = new Blob([JSON.stringify({ tokenId: response.tokenId }, null, 2)], { type: 'application/json' });
+        const tokenBlob = new Blob([JSON.stringify({tokenId: response.tokenId}, null, 2)], {type: 'application/json'});
         const options = {
             method: 'POST',
             body: tokenBlob,
@@ -31,9 +30,9 @@ class Login extends Component {
                     const token = user.token;
                     console.log(token);
                     this.props.login(token);
-                });
+                })
             })
-    };
+    }
 
     render() {
         let content = !!this.props.auth.isAuthenticated ?
@@ -45,13 +44,15 @@ class Login extends Component {
                 </div>
             ) :
             (
-                <div>
-                    <GoogleLogin className="googleAuth"
-                        clientId={config.GOOGLE_CLIENT_ID}
-                        buttonText="Google Login"
-                        onSuccess={this.googleResponse}
-                        onFailure={this.googleResponse}
-                    />
+                <div className="login-wrapper">
+                    <p>
+                        <GoogleLogin className="googleAuth"
+                            clientId={config.GOOGLE_CLIENT_ID}
+                            buttonText="Google Login"
+                            onSuccess={this.googleResponse}
+                            onFailure={this.googleResponse}
+                        />
+                    </p>
                     <img src={logo} className='brand-background1' />
                     <img src={logo} className='brand-background2' />
                 </div>
@@ -59,25 +60,24 @@ class Login extends Component {
 
         return (
             <div>
-                <CustomNavbar/>
                 <div className='container'>
                     <div className="login">
                         <div>
-                            <h3 className="title">Войти через Google</h3>
+                            <h3 className="title">Для работы с приложением необходимо авторизоваться в системе</h3>
                             {content}
                         </div>
                     </div>
                 </div>
             </div>
-        );
+        )
     }
-};
+}
 
 const mapStateToProps = (state) => {
     return {
         auth: state.auth
-    };
-};
+    }
+}
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -85,6 +85,6 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(login(token));
         }
     }
-};
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));
