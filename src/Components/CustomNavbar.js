@@ -41,7 +41,7 @@ class CustomNavbar extends Component {
         }
         else {
             loginLink = '/login';
-            loginText = 'Войти';
+            loginText = 'Выйти';
             userName = '';
         }
 
@@ -63,7 +63,7 @@ class CustomNavbar extends Component {
                             {userName}
                         </div>
                         <div>
-                            <button className='btn username-btn round'><a className='color' href={loginLink}>{loginText}</a></button>
+                            <button className='btn btn-danger'><a className='color' href={loginLink}>{loginText}</a></button>
                         </div>
                     </Collapse>
                 </Navbar>
