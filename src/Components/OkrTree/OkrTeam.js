@@ -98,13 +98,18 @@ function OkrTeam(props) {
                     })}
                     <div>
                         <p>
-                            <a className="ref-2" href='#'>
+                            <a className="ref-2" href='/edit_team'>
                                 <button className="edit-button menu">Редактировать команду</button>
                             </a>
                         </p>
                         <p>
                             <a className="ref-3" href='#'>
                                 <button className="delete-button menu">Удалить команду</button>
+                            </a>
+                        </p>
+                        <p>
+                            <a className="ref-4" href='#'>
+                                <button className="okr-button menu">OKR</button>
                             </a>
                         </p>
                     </div>
