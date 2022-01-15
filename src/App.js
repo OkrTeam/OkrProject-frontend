@@ -9,6 +9,7 @@ import Login from "./Auth/Containers/login";
 import Logout from "./Auth/Containers/logout";
 import AddTeam from "./Components/Teams/AddTeam";
 import OkrTree from "./Components/OkrTree/OkrTree";
+import EditTeam from "./Components/Teams/EditTeamComponents/EditTeam"
 
 class App extends Component {
     render() {
@@ -25,6 +26,7 @@ class App extends Component {
                     <Route history={history} path='/add_okr' component={AddTasks} />
                     <Route history={history} path='/edit_okr' component={EditTaskList} />
                     <Route history={history} path='/add_team' component={AddTeam} />
+                    <Route history={history} path='/edit_team' component={EditTeam} />
                     <Route history={history} path='/okr_tree' component={OkrTree}/>
                 </Switch>
             </div>
