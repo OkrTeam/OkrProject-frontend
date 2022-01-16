@@ -98,7 +98,10 @@ function OkrTeam(props) {
                     })}
                     <div>
                         <p>
-                            <a className="ref-2" href='/edit_team'>
+                            <a onClick={() => {
+                                localStorage.setItem('name',props.name);
+                                localStorage.setItem('members',JSON.stringify(props.members));
+                            }} className="ref-2" href='/edit_team'>
                                 <button className="edit-button menu">Редактировать команду</button>
                             </a>
                         </p>
