@@ -75,7 +75,7 @@ function EditTeam() {
                         overrideStrings={overrideStrings}
                         className="text-center"
                     />
-                    <div>
+                    <div onClick={localStorage.setItem('members',JSON.stringify(setSelected))}>
                         <input type="submit" className="btn add-team-btn round" value="Сохранить"/>
                     </div>
                 </form>
