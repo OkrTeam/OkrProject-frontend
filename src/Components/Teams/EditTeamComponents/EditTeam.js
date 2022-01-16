@@ -16,11 +16,11 @@ function EditTeam() {
     const [participants, setParticipants] = useState('')
     const [toggle, setToggle] = useState('')
 
-    const [selected , setSelected] = useState(getTeamMembers(5))
+    const [selected , setSelected] = useState(getTeamMembers())
 
-    function getTeamMembers (props) {
+    function getTeamMembers () {
         const teamMembers = JSON.parse(localStorage.getItem('members'))
-        const teamMembersList = teamMembers.map((member)=>{return {label: member.name,value: member.id}}
+        const teamMembersList = teamMembers.map((member,index)=>{return {label: member.name,value: index}}
         )
         console.log(teamMembersList)
         return teamMembersList;
@@ -75,7 +75,8 @@ function EditTeam() {
                         overrideStrings={overrideStrings}
                         className="text-center"
                     />
-                    <div onClick={localStorage.setItem('members',JSON.stringify(setSelected))}>
+                    {/*onClick={localStorage.setItem('members',JSON.stringify(setSelected))}*/}
+                    <div >
                         <input type="submit" className="btn add-team-btn round" value="Сохранить"/>
                     </div>
                 </form>
