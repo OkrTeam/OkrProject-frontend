@@ -16,15 +16,27 @@ function EditTeam() {
     const [participants, setParticipants] = useState('')
     const [toggle, setToggle] = useState('')
 
-    const [selected , setSelected] = useState([])
+    const [selected , setSelected] = useState(getTeamMembers(5))
+
+    function getTeamMembers (props) {
+        const teamMembers = JSON.parse(localStorage.getItem('members'))
+        const teamMembersList = teamMembers.map((member)=>{return {label: member.name,value: member.id}}
+        )
+        console.log(teamMembersList)
+        return teamMembersList;
+    };
+
     const options = [
-        { label: "Свободный участник1", value: "1" },
-        { label: "Свободный участник2", value: "2" },
-        { label: "Свободный участник3", value: "3" },
-        { label: "Свободный участник4", value: "4" },
-        { label: "Свободный участник5", value: "5" }
+        { label: "Алексей Попов", value: "1" },
+        { label: "Виталий Сергеев", value: "2" },
+        { label: "Артем Матвеев", value: "3" },
+        { label: "Александр Савченко", value: "4" },
+        { label: "Иван Колыганов", value: "5" },
+        { label: "Кирилл Михалев", value: "6" }
     ];
     const data = [{ label: "Свободный участник1", value: "1" }, { label: "Свободный участник2", value: "2" }]
+
+    const teamName = localStorage.getItem('name')
 
     const overrideStrings = {
         "allItemsAreSelected": "Все участники выбраны.",
@@ -50,11 +62,14 @@ function EditTeam() {
             <CustomNavbar brand='Dodo OKR' myOKR='Мой OKR' teams='Команды' username='Username'/>
             <div className="col-lg-8 offset-2">
                 <form onSubmit={submitHandler}>
-                    <input type='text' className='text-center form-item form-control margin-bottom' name='name'
-                           onChange={event => setName(event.target.value)} placeholder='Выбранная команда'/>
+                    {/*<input type='text' className='text-center form-item form-control margin-bottom' name='name'*/}
+                    {/*       onChange={event => setName(event.target.value)} placeholder='Выбранная команда'/>*/}
+                    <div className='text-center form-item form-control margin-bottom'>
+                        {teamName}
+                    </div>
                     <MultiSelect
                         options={options}
-                        value={data}
+                        value={selected}
                         onChange={setSelected}
                         labelledBy={"Выберите участников"}
                         overrideStrings={overrideStrings}
