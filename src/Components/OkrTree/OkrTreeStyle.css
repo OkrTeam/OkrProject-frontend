@@ -31,18 +31,6 @@
     left:3px;
 }
 
-.ref-2 {
-    position: absolute;
-    left:3px;
-    top:50px;
-}
-
-.ref-3 {
-    position: absolute;
-    left:3px;
-    top:82px;
-}
-
 .menu {
     width: 190px;
     height: 30px;
@@ -53,6 +41,32 @@
     margin-top: 3px;
 }
 
+.info {
+    position: absolute;
+    width: 200px;
+    min-height: 50px;
+    background: #f1cfb2;
+    top: 20px;
+    left: 105px;
+    z-index: 1;
+    outline: 2px solid #fb6700;
+}
+
+.team-name {
+    margin-bottom: 10px;
+}
+
+.team-members {
+    margin-bottom: 10px;
+}
+
+.close-button {
+    width:30px ;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+
 .add-button {
     background: #EE7200;
 }
@@ -61,9 +75,20 @@
     background: #7000FF;
 }
 
+.okr-button {
+    background: #EE7200;
+}
+
+
 .delete-button {
     background: #d63646;
 }
+
+.button-wrapper {
+    height: 40px;
+}
+
+.visible {}
 
 .invisible {
     display: none;
@@ -89,6 +114,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
+    cursor: pointer;
 }
 
 .circleOkr:hover {
@@ -144,6 +170,7 @@
     width: 100px;
     outline: 1px solid #7000ff;
     background-color: #c79cfd;
+    cursor: pointer;
 }
 
 .circle-wrapper {
@@ -151,6 +178,7 @@
     width: 100px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .circleTeam:hover {

@@ -76,7 +76,7 @@ function AddTeam() {
                            onChange={event => setName(event.target.value)} placeholder='Название команды'/>
                     <select className="text-center form-select form-control margin-bottom"  name='department'
                             onChange={event => setDepartment(event.target.value)}>
-                        <option selected>Выберите подразделение</option>
+                        <option selected>Выберите Родительскую команду</option>
                         <option value="1">Dodo Engineering</option>
                         <option value="2">Dodo 42</option>
                     </select>

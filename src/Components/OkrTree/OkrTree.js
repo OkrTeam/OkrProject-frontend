@@ -8,7 +8,7 @@ function OkrTree() {
 
     const [state, setState] = useState({
         visible: false,
-        selected_name: "не выбрано"
+        selected_name: "не выбрано",
     });
 
     function SetWidth(){
@@ -37,16 +37,6 @@ function OkrTree() {
                         <button className="add-button menu">Добавить команду</button>
                     </a>
                 </div>
-                <div className="select-info">
-                    <p>Выбранная команда:</p>
-                    <p>{state.selected_name}</p>
-                    <a className="ref-2" href='#'>
-                        <button className="edit-button menu">Редактировать команду</button>
-                    </a>
-                    <a className="ref-3" href='#'>
-                        <button className="delete-button menu">Удалить команду</button>
-                    </a>
-                </div>
                 <div className="circleOkr" onClick={toggle_vision}>
                     <p className="treeName">Dodo</p>
                 </div>
@@ -57,7 +47,8 @@ function OkrTree() {
                             {TeamArray.map(team => {
                                 return (
                                     <div className="col">
-                                        <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}/>
+                                        <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}
+                                        members={team.members}/>
                                     </div>
                                 )
                             })}

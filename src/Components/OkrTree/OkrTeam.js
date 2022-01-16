@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
 import './OkrTreeStyle.css';
+import '../../Images/close.png'
 
 function OkrTeam(props) {
 
@@ -9,6 +10,7 @@ function OkrTeam(props) {
 
     const [state, setState] = useState({
         visible: false,
+        visible_info:false,
         id:props.id
     });
 
@@ -32,16 +34,28 @@ function OkrTeam(props) {
     }
 
     function toggle_vision() {
+        console.log("toggle()_vision");
         const currentState = state.visible;
+        const currentState_info = state.visible_info;
         const promise = new Promise((resolve, reject) => {
-            setState({visible:(!currentState)});
+            if (state.visible === true && state.visible_info === false && props.children.length !== 0) {
+                setState({visible:(!currentState),visible_info:false});
+            }
+            else
+                setState({visible:(!currentState),visible_info:(!currentState_info)});
             resolve();
         });
         promise.then(() => {
-            if (!state.visible) {
+            if (!state.visible)
                 SetWidth();
-            }
         });
+    }
+
+    function toggle_info() {
+        const currentState = state.visible;
+        const currentState_info = state.visible_info;
+        setState({visible_info:(!currentState_info),visible: currentState})
+        console.log("toggle_info()");
     }
 
     return (
@@ -60,10 +74,44 @@ function OkrTeam(props) {
                         {props.children.map(team => {
                             return (
                                 <div className="col">
-                                    <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}/>
+                                    <OkrTeam name={team.name} progress={team.team_progress} children={team.children} id={team.id}
+                                             members={team.members}/>
                                 </div>
                             )
                         })}
+                    </div>
+                </div>
+            </div>
+            <div className={state.visible_info? 'info': 'invisible'}>
+                <div className="button-wrapper">
+                    <div className="close-button" onClick={() => toggle_info()}>
+                        <img src={require("../../Images/close.png")} width="30" height="30"/>
+                    </div>
+                </div>
+                <p className="team-name">{props.name}</p>
+                <div className="team-members">
+                    <p className="team-members">Участники команды:</p>
+                    {props.members.map(member => {
+                        return (
+                            <p>{member.name}</p>
+                        )
+                    })}
+                    <div>
+                        <p>
+                            <a className="ref-2" href='/edit_team'>
+                                <button className="edit-button menu">Редактировать команду</button>
+                            </a>
+                        </p>
+                        <p>
+                            <a className="ref-3" href='#'>
+                                <button className="delete-button menu">Удалить команду</button>
+                            </a>
+                        </p>
+                        <p>
+                            <a className="ref-4" href='#'>
+                                <button className="okr-button menu">OKR</button>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
