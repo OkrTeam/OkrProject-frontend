@@ -9,9 +9,11 @@ function OkrTeam(props) {
     }, []);
 
     const [state, setState] = useState({
-        visible: false,
-        visible_info:false,
-        id:props.id
+        visible: false
+    });
+
+    const [visibleCard, setVisibleCard] = useState({
+        visible_info:false
     });
 
     function SetWidth(){
@@ -34,15 +36,13 @@ function OkrTeam(props) {
     }
 
     function toggle_vision() {
-        console.log("toggle()_vision");
         const currentState = state.visible;
-        const currentState_info = state.visible_info;
         const promise = new Promise((resolve, reject) => {
-            if (state.visible === true && state.visible_info === false && props.children.length !== 0) {
-                setState({visible:(!currentState),visible_info:false});
+            if (state.visible === true && props.children.length !== 0) {
+                setState({visible:(!currentState)});
             }
             else
-                setState({visible:(!currentState),visible_info:(!currentState_info)});
+                setState({visible:(!currentState)});
             resolve();
         });
         promise.then(() => {
@@ -51,17 +51,17 @@ function OkrTeam(props) {
         });
     }
 
-    function toggle_info() {
-        const currentState = state.visible;
-        const currentState_info = state.visible_info;
-        setState({visible_info:(!currentState_info),visible: currentState})
-        console.log("toggle_info()");
-    }
-
     return (
         <div className="circle-wrapper">
             <div className="node2"/>
-            <div className="circleTeam" onClick={() => toggle_vision()}>
+            <div className="circleTeam" onClick={() => toggle_vision()}
+                 onMouseOver={() => {
+                     setVisibleCard({visible_info:true});
+                 }} onMouseLeave={
+                () => {
+                    setVisibleCard({visible_info:false})
+                }
+            }>
                 <svg className="progress-svg" width="100" height="100">
                     <circle className="progress-ring" stroke="black" stroke-width="4" cx="50" cy="50" r="45" fill="transparent" id={props.name}/>
                     <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">{props.name}</text>
@@ -82,12 +82,14 @@ function OkrTeam(props) {
                     </div>
                 </div>
             </div>
-            <div className={state.visible_info? 'info': 'invisible'}>
-                <div className="button-wrapper">
-                    <div className="close-button" onClick={() => toggle_info()}>
-                        <img src={require("../../Images/close.png")} width="30" height="30"/>
-                    </div>
-                </div>
+            <div className={visibleCard.visible_info? 'info': 'invisible_info'}
+                 onMouseOver={() => {
+                     setVisibleCard({visible_info:true});
+                 }} onMouseLeave={
+                () => {
+                    setVisibleCard({visible_info:false});
+                }
+            }>
                 <p className="team-name">{props.name}</p>
                 <div className="team-members">
                     <p className="team-members">Участники команды:</p>

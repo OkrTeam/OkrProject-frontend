@@ -1,5 +1,5 @@
 import React from 'react'
-import Goals from "../Goal";
+import GoalList from "../GoalList";
 import s from './MainTargetList.module.css'
 import '../targetList.css'
 import '../../../media.css';
@@ -29,7 +29,7 @@ function MainTargetList() {
                         </div>
                     </div>
                     <ul>
-                        <Goals />
+                        <GoalList />
                     </ul>
                 </div>
             </div>

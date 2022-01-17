@@ -50,6 +50,8 @@
     left: 105px;
     z-index: 1;
     outline: 2px solid #fb6700;
+    opacity: 1;
+    transition: opacity linear 0.5s;
 }
 
 .team-name {
@@ -92,6 +94,12 @@
 
 .invisible {
     display: none;
+}
+
+.invisible_info {
+    opacity: 0;
+    position: absolute;
+    left: -100000%;
 }
 
 .progress-ring{
