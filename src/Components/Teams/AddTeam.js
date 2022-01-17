@@ -24,12 +24,25 @@ function AddTeam() {
 
     const [selected, setSelected] = useState([])
     const options = [
-        { label: "Свободный участник1", value: "1" },
-        { label: "Свободный участник2", value: "2" },
-        { label: "Свободный участник3", value: "3" },
-        { label: "Свободный участник4", value: "4" },
-        { label: "Свободный участник5", value: "5" }
+        { label: "Алексей Попов", value: "1" },
+        { label: "Виталий Сергеев", value: "2" },
+        { label: "Артем Матвеев", value: "3" },
+        { label: "Александр Савченко", value: "4" },
+        { label: "Вася Пупкин", value: "5" },
+        { label: "Кирилл Михалев", value: "6" }
     ];
+
+    const [selectedTeams, setSelectedTeams] = useState([])
+    const teams = [
+        { label: "Team 1", value: "1" },
+        { label: "Team 2", value: "2" },
+        { label: "Team 3", value: "3" },
+        { label: "Team 4", value: "4" },
+        { label: "Team 5", value: "5" },
+        { label: "Team 6", value: "6" }
+    ];
+
+
     const overrideStrings = {
         "allItemsAreSelected": "Все участники выбраны.",
         "clearSearch": "Clear Search",
@@ -73,13 +86,22 @@ function AddTeam() {
             <div className="col-lg-8 offset-2">
                 <form onSubmit={submitHandler}>
                     <input type='text' className='text-center form-item form-control margin-bottom' name='name'
-                           onChange={event => setName(event.target.value)} placeholder='Название команды'/>
+                           onChange={event => setName(event.target.value)} placeholder='Название команды     '/>
                     <select className="text-center form-select form-control margin-bottom"  name='department'
                             onChange={event => setDepartment(event.target.value)}>
                         <option selected>Выберите Родительскую команду</option>
-                        <option value="1">Dodo Engineering</option>
-                        <option value="2">Dodo 42</option>
+                        <option value="1">Team 1</option>
+                        <option value="2">Team 2</option>
+                        <option value="2">Team 3</option>
                     </select>
+                    {/*<MultiSelect*/}
+                    {/*    options={teams}*/}
+                    {/*    value={selectedTeams}*/}
+                    {/*    onChange={setSelectedTeams}*/}
+                    {/*    labelledBy={"Выберите родительскую команду"}*/}
+                    {/*    overrideStrings={overrideStrings}*/}
+                    {/*    className="text-center margin-bottom"*/}
+                    {/*/>*/}
                         <MultiSelect
                                 options={options}
                                 value={selected}

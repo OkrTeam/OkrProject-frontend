@@ -31,7 +31,7 @@ function EditTeam() {
         { label: "Виталий Сергеев", value: "2" },
         { label: "Артем Матвеев", value: "3" },
         { label: "Александр Савченко", value: "4" },
-        { label: "Иван Колыганов", value: "5" },
+        { label: "Вася Пупкин", value: "5" },
         { label: "Кирилл Михалев", value: "6" }
     ];
     const data = [{ label: "Свободный участник1", value: "1" }, { label: "Свободный участник2", value: "2" }]
