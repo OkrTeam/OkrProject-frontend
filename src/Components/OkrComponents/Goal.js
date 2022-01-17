@@ -1,26 +1,21 @@
-﻿import React from 'react'
+import React from 'react'
 import './targetList.css'
-import SubgoalArray from "../OkrComponents/Subgoal"
-import goalArray from '../data/data'
+import SubgoalList from "./SubgoalList"
 
-function Goals() {
-        return (
-            <>
-                {goalArray.map(goalArray => {
-                    return (
-                        <li class="padding-li">
-                            <div class="big-goal text">
-                                <div class="text goal-fix">{goalArray.goalname}</div>
-                                <div class="tag">IT Hiring</div>
-                            </div>
-                            <ul className="ul-padding">
-                                <SubgoalArray subgoals={goalArray.subgoals} />
-                            </ul>
-                        </li>
-                    )
-                })}
-            </>
-        )
+function Goal(props) {
+    return (
+        <>
+            <li class="padding-li">
+                <div class="big-goal text">
+                    <div class="text goal-fix">{props.goalname}</div>
+                    <div class="tag">IT Hiring</div>
+                </div>
+                <ul className="ul-padding">
+                    <SubgoalList subgoals={props.subgoals} />
+                </ul>
+            </li>
+        </>
+    )
 }
 
-export default Goals
+export default Goal
