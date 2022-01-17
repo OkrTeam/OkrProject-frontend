@@ -113,7 +113,7 @@ function OkrTeam(props) {
                             </a>
                         </p>
                         <p>
-                            <a className="ref-4" href='#'>
+                            <a className="ref-4" href='/my_okr'>
                                 <button className="okr-button menu">OKR</button>
                             </a>
                         </p>
