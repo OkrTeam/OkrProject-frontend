@@ -63,7 +63,7 @@ class CustomNavbar extends Component {
                             {userName}
                         </div>
                         <div>
-                            <button className='btn btn-danger'><a className='color' href={loginLink}>{loginText}</a></button>
+                            <button className='delete-button delete_modal'><a className='color' href={loginLink}>{loginText}</a></button>
                         </div>
                     </Collapse>
                 </Navbar>
