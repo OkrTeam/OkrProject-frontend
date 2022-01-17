@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d10be2ea-50fc-4012-974a-5cbac36db5d1" name="Default Changelist" comment="card info fix">
-      <change afterPath="$PROJECT_DIR$/src/Components/OkrComponents/CommentList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/OkrComponents/GoalList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/OkrComponents/SubgoalList.js" afterDir="false" />
+    <list default="true" id="d10be2ea-50fc-4012-974a-5cbac36db5d1" name="Default Changelist" comment="Okr card toggle fix">
+      <change afterPath="$PROJECT_DIR$/src/Components/OkrTree/OkrModalDelete.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OkrComponents/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrComponents/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OkrComponents/Goal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrComponents/Goal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OkrComponents/MainTargetList/MainTargetList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrComponents/MainTargetList/MainTargetList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OkrComponents/Subgoal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrComponents/Subgoal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OkrTree/OkrTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrTree/OkrTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OkrTree/OkrTreeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OkrTree/OkrTreeStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

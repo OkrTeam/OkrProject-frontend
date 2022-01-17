@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import './OkrTreeStyle.css';
 import '../../Images/close.png'
+import OkrModalDelete from "./OkrModalDelete";
 
 function OkrTeam(props) {
 
@@ -108,9 +109,7 @@ function OkrTeam(props) {
                             </a>
                         </p>
                         <p>
-                            <a className="ref-3" href='#'>
-                                <button className="delete-button menu">Удалить команду</button>
-                            </a>
+                                <button className="delete-button menu" data-bs-toggle="modal" data-bs-target={"#modal" + props.id}>Удалить команду</button>
                         </p>
                         <p>
                             <a className="ref-4" href='/my_okr'>
@@ -120,6 +119,7 @@ function OkrTeam(props) {
                     </div>
                 </div>
             </div>
+            <OkrModalDelete id={"modal" + props.id} name={props.name}/>
         </div>
     )
 }
